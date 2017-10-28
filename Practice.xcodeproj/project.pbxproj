@@ -7,21 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BEB8654AC27967FFD2232C17 /* Pods_Practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C568EC4B3B35F3B9ACE75E /* Pods_Practice.framework */; };
 		BFA077C21FA2EC2100006350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA077C11FA2EC2100006350 /* AppDelegate.swift */; };
-		BFA077C41FA2EC2100006350 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA077C31FA2EC2100006350 /* ViewController.swift */; };
-		BFA077C71FA2EC2100006350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA077C51FA2EC2100006350 /* Main.storyboard */; };
+		BFA077C71FA2EC2100006350 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA077C51FA2EC2100006350 /* Login.storyboard */; };
 		BFA077C91FA2EC2100006350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFA077C81FA2EC2100006350 /* Assets.xcassets */; };
 		BFA077CC1FA2EC2100006350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA077CA1FA2EC2100006350 /* LaunchScreen.storyboard */; };
+		BFA077E81FA2F0DF00006350 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA077D31FA2F0DD00006350 /* ProfileTableViewCell.swift */; };
+		BFA077E91FA2F0DF00006350 /* TweetMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA077D41FA2F0DD00006350 /* TweetMethod.swift */; };
+		BFA077EB1FA2F0DF00006350 /* JSONObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA077D61FA2F0DD00006350 /* JSONObject.swift */; };
+		BFA077EC1FA2F0DF00006350 /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA077D71FA2F0DD00006350 /* CurrentUser.swift */; };
+		BFA077ED1FA2F0DF00006350 /* ProfileOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA077D81FA2F0DD00006350 /* ProfileOptionTableViewCell.swift */; };
+		BFA077EE1FA2F0DF00006350 /* UserMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA077D91FA2F0DD00006350 /* UserMethod.swift */; };
+		BFA077EF1FA2F0DF00006350 /* Oauth.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA077DA1FA2F0DE00006350 /* Oauth.swift */; };
+		BFA077F01FA2F0DF00006350 /* OtherMenuOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA077DB1FA2F0DE00006350 /* OtherMenuOptionTableViewCell.swift */; };
+		BFA077F11FA2F0DF00006350 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA077DC1FA2F0DE00006350 /* LoginViewController.swift */; };
+		BFA077F21FA2F0DF00006350 /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA077DD1FA2F0DE00006350 /* TimelineTableViewCell.swift */; };
+		BFA077F31FA2F0DF00006350 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA077DE1FA2F0DE00006350 /* MenuViewController.swift */; };
+		BFA077F41FA2F0DF00006350 /* HamburgerViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA077DF1FA2F0DE00006350 /* HamburgerViewControllerExtension.swift */; };
+		BFA077F51FA2F0DF00006350 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA077E01FA2F0DE00006350 /* Tweet.swift */; };
+		BFA077F61FA2F0DF00006350 /* TwitObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA077E11FA2F0DE00006350 /* TwitObject.swift */; };
+		BFA077F71FA2F0DF00006350 /* ProfileViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA077E21FA2F0DE00006350 /* ProfileViewControllerExtension.swift */; };
+		BFA077F81FA2F0DF00006350 /* ProfileNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA077E31FA2F0DE00006350 /* ProfileNavViewController.swift */; };
+		BFA077F91FA2F0DF00006350 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA077E41FA2F0DE00006350 /* ProfileViewController.swift */; };
+		BFA077FA1FA2F0DF00006350 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA077E51FA2F0DF00006350 /* UserAccount.swift */; };
+		BFA077FB1FA2F0DF00006350 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA077E61FA2F0DF00006350 /* UserProfile.swift */; };
+		BFA077FC1FA2F0DF00006350 /* HamburgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA077E71FA2F0DF00006350 /* HamburgerViewController.swift */; };
+		BFA078001FA473A800006350 /* Hamburger.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA077FF1FA473A800006350 /* Hamburger.storyboard */; };
+		BFA078021FA473C700006350 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA078011FA473C700006350 /* Menu.storyboard */; };
+		BFA078041FA4740900006350 /* Timeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA078031FA4740900006350 /* Timeline.storyboard */; };
+		BFA078061FA47FE100006350 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA078051FA47FE100006350 /* Camera.storyboard */; };
+		BFA0780A1FA4835100006350 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA078091FA4835100006350 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A742A98097D167DEBFDDC2A /* Pods-Practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Practice/Pods-Practice.debug.xcconfig"; sourceTree = "<group>"; };
+		90C568EC4B3B35F3B9ACE75E /* Pods_Practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA077BE1FA2EC2100006350 /* Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA077C11FA2EC2100006350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BFA077C31FA2EC2100006350 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BFA077C61FA2EC2100006350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFA077C61FA2EC2100006350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		BFA077C81FA2EC2100006350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFA077CB1FA2EC2100006350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFA077CD1FA2EC2100006350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFA077D31FA2F0DD00006350 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		BFA077D41FA2F0DD00006350 /* TweetMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetMethod.swift; sourceTree = "<group>"; };
+		BFA077D61FA2F0DD00006350 /* JSONObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONObject.swift; sourceTree = "<group>"; };
+		BFA077D71FA2F0DD00006350 /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
+		BFA077D81FA2F0DD00006350 /* ProfileOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionTableViewCell.swift; sourceTree = "<group>"; };
+		BFA077D91FA2F0DD00006350 /* UserMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMethod.swift; sourceTree = "<group>"; };
+		BFA077DA1FA2F0DE00006350 /* Oauth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oauth.swift; sourceTree = "<group>"; };
+		BFA077DB1FA2F0DE00006350 /* OtherMenuOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherMenuOptionTableViewCell.swift; sourceTree = "<group>"; };
+		BFA077DC1FA2F0DE00006350 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BFA077DD1FA2F0DE00006350 /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
+		BFA077DE1FA2F0DE00006350 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		BFA077DF1FA2F0DE00006350 /* HamburgerViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerViewControllerExtension.swift; sourceTree = "<group>"; };
+		BFA077E01FA2F0DE00006350 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		BFA077E11FA2F0DE00006350 /* TwitObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitObject.swift; sourceTree = "<group>"; };
+		BFA077E21FA2F0DE00006350 /* ProfileViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewControllerExtension.swift; sourceTree = "<group>"; };
+		BFA077E31FA2F0DE00006350 /* ProfileNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavViewController.swift; sourceTree = "<group>"; };
+		BFA077E41FA2F0DE00006350 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		BFA077E51FA2F0DF00006350 /* UserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
+		BFA077E61FA2F0DF00006350 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		BFA077E71FA2F0DF00006350 /* HamburgerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerViewController.swift; sourceTree = "<group>"; };
+		BFA077FF1FA473A800006350 /* Hamburger.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Hamburger.storyboard; sourceTree = "<group>"; };
+		BFA078011FA473C700006350 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		BFA078031FA4740900006350 /* Timeline.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timeline.storyboard; sourceTree = "<group>"; };
+		BFA078051FA47FE100006350 /* Camera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
+		BFA078091FA4835100006350 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		CDFD5482542328966FF69A0B /* Pods-Practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practice.release.xcconfig"; path = "Pods/Target Support Files/Pods-Practice/Pods-Practice.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +81,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB8654AC27967FFD2232C17 /* Pods_Practice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50684BD3E8F6C92DD1C2E2BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A742A98097D167DEBFDDC2A /* Pods-Practice.debug.xcconfig */,
+				CDFD5482542328966FF69A0B /* Pods-Practice.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BFA077B51FA2EC2100006350 = {
 			isa = PBXGroup;
 			children = (
 				BFA077C01FA2EC2100006350 /* Practice */,
 				BFA077BF1FA2EC2100006350 /* Products */,
+				50684BD3E8F6C92DD1C2E2BD /* Pods */,
+				EC1DBB72461E85CE5BEF247F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +118,62 @@
 		BFA077C01FA2EC2100006350 /* Practice */ = {
 			isa = PBXGroup;
 			children = (
-				BFA077C11FA2EC2100006350 /* AppDelegate.swift */,
-				BFA077C31FA2EC2100006350 /* ViewController.swift */,
-				BFA077C51FA2EC2100006350 /* Main.storyboard */,
-				BFA077C81FA2EC2100006350 /* Assets.xcassets */,
-				BFA077CA1FA2EC2100006350 /* LaunchScreen.storyboard */,
 				BFA077CD1FA2EC2100006350 /* Info.plist */,
+				BFA077C81FA2EC2100006350 /* Assets.xcassets */,
+				BFA077C11FA2EC2100006350 /* AppDelegate.swift */,
+				BFA077FD1FA2F15300006350 /* StoryBoards */,
+				BFA077FE1FA2F91500006350 /* Models */,
+				BFA077E71FA2F0DF00006350 /* HamburgerViewController.swift */,
+				BFA077DF1FA2F0DE00006350 /* HamburgerViewControllerExtension.swift */,
+				BFA077DC1FA2F0DE00006350 /* LoginViewController.swift */,
+				BFA077DE1FA2F0DE00006350 /* MenuViewController.swift */,
+				BFA077D81FA2F0DD00006350 /* ProfileOptionTableViewCell.swift */,
+				BFA077DB1FA2F0DE00006350 /* OtherMenuOptionTableViewCell.swift */,
+				BFA077E31FA2F0DE00006350 /* ProfileNavViewController.swift */,
+				BFA077E41FA2F0DE00006350 /* ProfileViewController.swift */,
+				BFA077D31FA2F0DD00006350 /* ProfileTableViewCell.swift */,
+				BFA077E21FA2F0DE00006350 /* ProfileViewControllerExtension.swift */,
+				BFA077DD1FA2F0DE00006350 /* TimelineTableViewCell.swift */,
+				BFA078091FA4835100006350 /* CameraViewController.swift */,
 			);
 			path = Practice;
+			sourceTree = "<group>";
+		};
+		BFA077FD1FA2F15300006350 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				BFA077CA1FA2EC2100006350 /* LaunchScreen.storyboard */,
+				BFA077C51FA2EC2100006350 /* Login.storyboard */,
+				BFA077FF1FA473A800006350 /* Hamburger.storyboard */,
+				BFA078011FA473C700006350 /* Menu.storyboard */,
+				BFA078031FA4740900006350 /* Timeline.storyboard */,
+				BFA078051FA47FE100006350 /* Camera.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		BFA077FE1FA2F91500006350 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BFA077D71FA2F0DD00006350 /* CurrentUser.swift */,
+				BFA077D61FA2F0DD00006350 /* JSONObject.swift */,
+				BFA077E01FA2F0DE00006350 /* Tweet.swift */,
+				BFA077D41FA2F0DD00006350 /* TweetMethod.swift */,
+				BFA077E11FA2F0DE00006350 /* TwitObject.swift */,
+				BFA077E51FA2F0DF00006350 /* UserAccount.swift */,
+				BFA077D91FA2F0DD00006350 /* UserMethod.swift */,
+				BFA077E61FA2F0DF00006350 /* UserProfile.swift */,
+				BFA077DA1FA2F0DE00006350 /* Oauth.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC1DBB72461E85CE5BEF247F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90C568EC4B3B35F3B9ACE75E /* Pods_Practice.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFA077D01FA2EC2100006350 /* Build configuration list for PBXNativeTarget "Practice" */;
 			buildPhases = (
+				3050B904A6806AA45C6A9FB4 /* [CP] Check Pods Manifest.lock */,
 				BFA077BA1FA2EC2100006350 /* Sources */,
 				BFA077BB1FA2EC2100006350 /* Frameworks */,
 				BFA077BC1FA2EC2100006350 /* Resources */,
+				8C470BF501503F97699A4078 /* [CP] Embed Pods Frameworks */,
+				E4141A1E2978A7209E09EF02 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,33 +238,105 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA078021FA473C700006350 /* Menu.storyboard in Resources */,
+				BFA078061FA47FE100006350 /* Camera.storyboard in Resources */,
+				BFA078041FA4740900006350 /* Timeline.storyboard in Resources */,
+				BFA078001FA473A800006350 /* Hamburger.storyboard in Resources */,
 				BFA077CC1FA2EC2100006350 /* LaunchScreen.storyboard in Resources */,
 				BFA077C91FA2EC2100006350 /* Assets.xcassets in Resources */,
-				BFA077C71FA2EC2100006350 /* Main.storyboard in Resources */,
+				BFA077C71FA2EC2100006350 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3050B904A6806AA45C6A9FB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8C470BF501503F97699A4078 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Practice/Pods-Practice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4141A1E2978A7209E09EF02 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Practice/Pods-Practice-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BFA077BA1FA2EC2100006350 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFA077C41FA2EC2100006350 /* ViewController.swift in Sources */,
+				BFA077F41FA2F0DF00006350 /* HamburgerViewControllerExtension.swift in Sources */,
 				BFA077C21FA2EC2100006350 /* AppDelegate.swift in Sources */,
+				BFA077FB1FA2F0DF00006350 /* UserProfile.swift in Sources */,
+				BFA077E91FA2F0DF00006350 /* TweetMethod.swift in Sources */,
+				BFA077F71FA2F0DF00006350 /* ProfileViewControllerExtension.swift in Sources */,
+				BFA077FA1FA2F0DF00006350 /* UserAccount.swift in Sources */,
+				BFA077ED1FA2F0DF00006350 /* ProfileOptionTableViewCell.swift in Sources */,
+				BFA077EE1FA2F0DF00006350 /* UserMethod.swift in Sources */,
+				BFA077F21FA2F0DF00006350 /* TimelineTableViewCell.swift in Sources */,
+				BFA077F51FA2F0DF00006350 /* Tweet.swift in Sources */,
+				BFA077F91FA2F0DF00006350 /* ProfileViewController.swift in Sources */,
+				BFA0780A1FA4835100006350 /* CameraViewController.swift in Sources */,
+				BFA077E81FA2F0DF00006350 /* ProfileTableViewCell.swift in Sources */,
+				BFA077F31FA2F0DF00006350 /* MenuViewController.swift in Sources */,
+				BFA077F61FA2F0DF00006350 /* TwitObject.swift in Sources */,
+				BFA077F01FA2F0DF00006350 /* OtherMenuOptionTableViewCell.swift in Sources */,
+				BFA077EC1FA2F0DF00006350 /* CurrentUser.swift in Sources */,
+				BFA077EB1FA2F0DF00006350 /* JSONObject.swift in Sources */,
+				BFA077EF1FA2F0DF00006350 /* Oauth.swift in Sources */,
+				BFA077F81FA2F0DF00006350 /* ProfileNavViewController.swift in Sources */,
+				BFA077FC1FA2F0DF00006350 /* HamburgerViewController.swift in Sources */,
+				BFA077F11FA2F0DF00006350 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BFA077C51FA2EC2100006350 /* Main.storyboard */ = {
+		BFA077C51FA2EC2100006350 /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BFA077C61FA2EC2100006350 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		BFA077CA1FA2EC2100006350 /* LaunchScreen.storyboard */ = {
@@ -272,13 +459,14 @@
 		};
 		BFA077D11FA2EC2100006350 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A742A98097D167DEBFDDC2A /* Pods-Practice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JC68KFVHSJ;
 				INFOPLIST_FILE = Practice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.op.Practice;
+				PRODUCT_BUNDLE_IDENTIFIER = com.op.TwitterReMake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -287,13 +475,14 @@
 		};
 		BFA077D21FA2EC2100006350 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDFD5482542328966FF69A0B /* Pods-Practice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JC68KFVHSJ;
 				INFOPLIST_FILE = Practice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.op.Practice;
+				PRODUCT_BUNDLE_IDENTIFIER = com.op.TwitterReMake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -13,9 +13,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        Oauth.authorize?.fetchAccessToken(url: url)
+        return true
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if CurrentUser.currentUser != nil{
+            let hamburgerStoryboard = UIStoryboard(name: "Hamburger", bundle: nil)
+            let menuStoryboard = UIStoryboard(name: "Menu", bundle: nil)
+            let hamburgerViewController = hamburgerStoryboard.instantiateViewController(withIdentifier: "HamburgerViewController") as! HamburgerViewController
+            let menuViewController = menuStoryboard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+            menuViewController.hamburgerViewController = hamburgerViewController
+            hamburgerViewController.menuViewController = menuViewController
+            window?.rootViewController = hamburgerViewController
+        }
+        else{
+            print("There is no current user")
+        }
+
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: UserAccount.event.didSignOut), object: nil, queue: OperationQueue.main){(Notification) -> Void in
+            let storyboard = UIStoryboard(name: "Login", bundle: nil)
+            let vc = storyboard.instantiateInitialViewController()
+            self.window?.rootViewController = vc
+        }
         return true
     }
 

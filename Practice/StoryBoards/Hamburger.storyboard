@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hamburger View Controller-->
+        <scene sceneID="MEe-b7-dt5">
+            <objects>
+                <viewController storyboardIdentifier="HamburgerViewController" id="79Y-B8-LXW" customClass="HamburgerViewController" customModule="Practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mx2-E4-H9L"/>
+                        <viewControllerLayoutGuide type="bottom" id="b5a-pz-5Mg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zf9-73-G8J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wpj-g9-H8Q">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="nqX-i9-BEQ" appends="YES" id="Ieg-G9-rFe"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rY1-MY-fJa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="f8s-ud-VZJ" appends="YES" id="ckw-2j-BYZ"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b5a-pz-5Mg" firstAttribute="top" secondItem="rY1-MY-fJa" secondAttribute="bottom" id="9tD-5G-XhW"/>
+                            <constraint firstItem="rY1-MY-fJa" firstAttribute="leading" secondItem="zf9-73-G8J" secondAttribute="leading" id="e5p-Bq-10u"/>
+                            <constraint firstItem="rY1-MY-fJa" firstAttribute="top" secondItem="zf9-73-G8J" secondAttribute="top" id="iUk-j7-5Fk"/>
+                            <constraint firstAttribute="trailing" secondItem="rY1-MY-fJa" secondAttribute="trailing" id="tKT-xl-PEm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JOx-Wz-d7U"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="rY1-MY-fJa" id="o1k-bp-sRu"/>
+                        <outlet property="leftMarginConstrain" destination="e5p-Bq-10u" id="azR-V2-tzw"/>
+                        <outlet property="menuNCameraView" destination="wpj-g9-H8Q" id="hRx-E9-iQT"/>
+                        <outlet property="rightMarginConstrain" destination="tKT-xl-PEm" id="tnR-X3-RH4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="enW-H2-GMA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="f8s-ud-VZJ">
+                    <connections>
+                        <action selector="onPaningRight:" destination="79Y-B8-LXW" id="rJC-O1-2MB"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="nqX-i9-BEQ">
+                    <connections>
+                        <action selector="panLeft:" destination="79Y-B8-LXW" id="GXv-2L-dqD"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="31.199999999999999" y="709.29535232383819"/>
+        </scene>
+    </scenes>
+</document>
