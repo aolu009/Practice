@@ -19,6 +19,11 @@ extension HamburgerViewController{
         })
     }
     
+    func setupCameraView(){
+        phototaker = ImagePickerViewController(nibName: "ImagePickerViewController", bundle: nil)
+        phototaker?.view.frame = self.view.bounds
+    }
+    
     
     
     func performPanRightAction(_ panGestureRecognizer: UIPanGestureRecognizer){
@@ -29,14 +34,6 @@ extension HamburgerViewController{
             self.originalLeftMargin = leftMarginConstrain.constant
             self.originalRighttMargin = rightMarginConstrain.constant
         } else if panGestureRecognizer.state == .changed {
-            
-//            if velocity.x < 0 && self.originalLeftMargin == 0{
-//                self.menuViewController = self.imagepicker
-//            }
-//            if velocity.x > 0{
-//                self.menuViewController = self.tempViewController
-//            }
-            
             leftMarginConstrain.constant = self.originalLeftMargin + translation.x
             rightMarginConstrain.constant = self.originalRighttMargin - translation.x
         } else if panGestureRecognizer.state == .ended {
@@ -49,7 +46,8 @@ extension HamburgerViewController{
                         self.leftMarginConstrain.constant = 0
                         self.rightMarginConstrain.constant = 0
                     }else{
-                        self.menuViewController = self.imagepicker
+                        self.setupCameraView()
+                        self.menuViewController = self.phototaker//imagepicker
                         self.leftMarginConstrain.constant = -self.view.frame.width
                         self.rightMarginConstrain.constant = self.view.frame.width
                     }
@@ -71,7 +69,7 @@ extension HamburgerViewController{
             self.originalLeftMargin = leftMarginConstrain.constant
             self.originalRighttMargin = rightMarginConstrain.constant
         } else if panGestureRecognizer.state == .changed {
-            if self.menuViewController === imagepicker && velocity.x > 0{
+            if self.menuViewController === phototaker && velocity.x > 0{
                 leftMarginConstrain.constant = self.originalLeftMargin + translation.x
                 rightMarginConstrain.constant = self.originalRighttMargin - translation.x
             }

@@ -22,6 +22,7 @@ class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         super.viewDidLoad()
         setupTable()
         setupControllerViews()
+        
     }
 
 

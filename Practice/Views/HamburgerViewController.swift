@@ -23,6 +23,8 @@ class HamburgerViewController: UIViewController,UIImagePickerControllerDelegate,
     var originalRighttMargin: CGFloat!
     var imagepicker: UIImagePickerController?
     
+    var phototaker: ImagePickerViewController?
+    
     
     var tempViewController: UIViewController?
     
@@ -56,15 +58,11 @@ class HamburgerViewController: UIViewController,UIImagePickerControllerDelegate,
     }
     
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera){
-            imagepicker = UIImagePickerController()
-            imagepicker?.delegate = self
-            imagepicker?.sourceType = UIImagePickerControllerSourceType.camera
-            imagepicker?.showsCameraControls = true
-            imagepicker?.allowsEditing = true
-        }
+        setupCameraView()
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

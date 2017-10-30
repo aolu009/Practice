@@ -37,6 +37,12 @@
 		BFA078041FA4740900006350 /* Timeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA078031FA4740900006350 /* Timeline.storyboard */; };
 		BFA078061FA47FE100006350 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA078051FA47FE100006350 /* Camera.storyboard */; };
 		BFA0780A1FA4835100006350 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA078091FA4835100006350 /* CameraViewController.swift */; };
+		BFA0780D1FA5C66900006350 /* Login.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFA0780C1FA5C66900006350 /* Login.xib */; };
+		BFA0780F1FA5C89A00006350 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA0780E1FA5C89A00006350 /* Login.swift */; };
+		BFA078121FA5CA4C00006350 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA078101FA5CA4C00006350 /* ImagePickerViewController.swift */; };
+		BFA078131FA5CA4C00006350 /* ImagePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFA078111FA5CA4C00006350 /* ImagePickerViewController.xib */; };
+		BFA078151FA7249200006350 /* PreviewImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA078141FA7249200006350 /* PreviewImageView.swift */; };
+		BFA078171FA724B000006350 /* PreviewImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFA078161FA724B000006350 /* PreviewImageView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +79,12 @@
 		BFA078031FA4740900006350 /* Timeline.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timeline.storyboard; sourceTree = "<group>"; };
 		BFA078051FA47FE100006350 /* Camera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
 		BFA078091FA4835100006350 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		BFA0780C1FA5C66900006350 /* Login.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Login.xib; sourceTree = "<group>"; };
+		BFA0780E1FA5C89A00006350 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		BFA078101FA5CA4C00006350 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
+		BFA078111FA5CA4C00006350 /* ImagePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagePickerViewController.xib; sourceTree = "<group>"; };
+		BFA078141FA7249200006350 /* PreviewImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewImageView.swift; sourceTree = "<group>"; };
+		BFA078161FA724B000006350 /* PreviewImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewImageView.xib; sourceTree = "<group>"; };
 		CDFD5482542328966FF69A0B /* Pods-Practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practice.release.xcconfig"; path = "Pods/Target Support Files/Pods-Practice/Pods-Practice.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,18 +135,13 @@
 				BFA077C11FA2EC2100006350 /* AppDelegate.swift */,
 				BFA077FD1FA2F15300006350 /* StoryBoards */,
 				BFA077FE1FA2F91500006350 /* Models */,
-				BFA077E71FA2F0DF00006350 /* HamburgerViewController.swift */,
-				BFA077DF1FA2F0DE00006350 /* HamburgerViewControllerExtension.swift */,
-				BFA077DC1FA2F0DE00006350 /* LoginViewController.swift */,
-				BFA077DE1FA2F0DE00006350 /* MenuViewController.swift */,
-				BFA077D81FA2F0DD00006350 /* ProfileOptionTableViewCell.swift */,
-				BFA077DB1FA2F0DE00006350 /* OtherMenuOptionTableViewCell.swift */,
-				BFA077E31FA2F0DE00006350 /* ProfileNavViewController.swift */,
-				BFA077E41FA2F0DE00006350 /* ProfileViewController.swift */,
-				BFA077D31FA2F0DD00006350 /* ProfileTableViewCell.swift */,
-				BFA077E21FA2F0DE00006350 /* ProfileViewControllerExtension.swift */,
-				BFA077DD1FA2F0DE00006350 /* TimelineTableViewCell.swift */,
-				BFA078091FA4835100006350 /* CameraViewController.swift */,
+				BFA0780B1FA5C50C00006350 /* Views */,
+				BFA0780C1FA5C66900006350 /* Login.xib */,
+				BFA0780E1FA5C89A00006350 /* Login.swift */,
+				BFA078111FA5CA4C00006350 /* ImagePickerViewController.xib */,
+				BFA078101FA5CA4C00006350 /* ImagePickerViewController.swift */,
+				BFA078161FA724B000006350 /* PreviewImageView.xib */,
+				BFA078141FA7249200006350 /* PreviewImageView.swift */,
 			);
 			path = Practice;
 			sourceTree = "<group>";
@@ -166,6 +173,25 @@
 				BFA077DA1FA2F0DE00006350 /* Oauth.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BFA0780B1FA5C50C00006350 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BFA077E71FA2F0DF00006350 /* HamburgerViewController.swift */,
+				BFA077DF1FA2F0DE00006350 /* HamburgerViewControllerExtension.swift */,
+				BFA077DC1FA2F0DE00006350 /* LoginViewController.swift */,
+				BFA077DE1FA2F0DE00006350 /* MenuViewController.swift */,
+				BFA077D81FA2F0DD00006350 /* ProfileOptionTableViewCell.swift */,
+				BFA077DB1FA2F0DE00006350 /* OtherMenuOptionTableViewCell.swift */,
+				BFA077E31FA2F0DE00006350 /* ProfileNavViewController.swift */,
+				BFA077E41FA2F0DE00006350 /* ProfileViewController.swift */,
+				BFA077D31FA2F0DD00006350 /* ProfileTableViewCell.swift */,
+				BFA077E21FA2F0DE00006350 /* ProfileViewControllerExtension.swift */,
+				BFA077DD1FA2F0DE00006350 /* TimelineTableViewCell.swift */,
+				BFA078091FA4835100006350 /* CameraViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		EC1DBB72461E85CE5BEF247F /* Frameworks */ = {
@@ -238,13 +264,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA0780D1FA5C66900006350 /* Login.xib in Resources */,
 				BFA078021FA473C700006350 /* Menu.storyboard in Resources */,
 				BFA078061FA47FE100006350 /* Camera.storyboard in Resources */,
 				BFA078041FA4740900006350 /* Timeline.storyboard in Resources */,
 				BFA078001FA473A800006350 /* Hamburger.storyboard in Resources */,
 				BFA077CC1FA2EC2100006350 /* LaunchScreen.storyboard in Resources */,
+				BFA078131FA5CA4C00006350 /* ImagePickerViewController.xib in Resources */,
 				BFA077C91FA2EC2100006350 /* Assets.xcassets in Resources */,
 				BFA077C71FA2EC2100006350 /* Login.storyboard in Resources */,
+				BFA078171FA724B000006350 /* PreviewImageView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,11 +344,14 @@
 				BFA077F51FA2F0DF00006350 /* Tweet.swift in Sources */,
 				BFA077F91FA2F0DF00006350 /* ProfileViewController.swift in Sources */,
 				BFA0780A1FA4835100006350 /* CameraViewController.swift in Sources */,
+				BFA078151FA7249200006350 /* PreviewImageView.swift in Sources */,
 				BFA077E81FA2F0DF00006350 /* ProfileTableViewCell.swift in Sources */,
 				BFA077F31FA2F0DF00006350 /* MenuViewController.swift in Sources */,
 				BFA077F61FA2F0DF00006350 /* TwitObject.swift in Sources */,
 				BFA077F01FA2F0DF00006350 /* OtherMenuOptionTableViewCell.swift in Sources */,
 				BFA077EC1FA2F0DF00006350 /* CurrentUser.swift in Sources */,
+				BFA0780F1FA5C89A00006350 /* Login.swift in Sources */,
+				BFA078121FA5CA4C00006350 /* ImagePickerViewController.swift in Sources */,
 				BFA077EB1FA2F0DF00006350 /* JSONObject.swift in Sources */,
 				BFA077EF1FA2F0DF00006350 /* Oauth.swift in Sources */,
 				BFA077F81FA2F0DF00006350 /* ProfileNavViewController.swift in Sources */,
